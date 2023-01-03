@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(./bac.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar{
+width: 100%;
+display: flex;
+padding: 20px 0;
+margin: auto;
+align-items: center;
+justify-content: space-between;
+
+}
+button{
+    width: 100px;
+    padding: 15px 0;
+    margin: 10px 25px;
+    color: aliceblue;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid aliceblue;
+    border-radius: 25px;
+    position: relative;
+}
+.detels{
+   color: aliceblue;
+   margin-top: 15%;
+   margin-left: 8%;
+}
+.detels h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+.detels p{
+    margin: 20px auto;
+    font-weight: 200;
+    line-height: 25px;
+}
+.detels a{
+text-decoration: none;
+color: aliceblue;
+padding: 10px 25px;
+background: transparent;
+border: 1px solid aliceblue;
+outline: none;
+border-radius: 20px;
+cursor: pointer;
+
+}
+.bubbble{
+   display: flex;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: space-around;
+    bottom: -70px;
+}
+.bubbble img{
+    width: 50px;
+    animation: bubbble 7s linear infinite;
+}
+@keyframes bubbble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbble img:nth-child(1){
+    animation-delay: 1s;
+}
+.bubbble img:nth-child(2){
+    animation-delay: 3s;
+}
+.bubbble img:nth-child(3){
+    animation-delay: 2s;
+}.bubbble img:nth-child(4){
+    animation-delay: 5.5s;
+}
+.bubbble img:nth-child(5){
+    animation-delay: 7s;
+}
+.bubbble img:nth-child(6){
+    animation-delay: 5s;
+}
+.bubbble img:nth-child(7){
+    animation-delay: 4s;
+}
